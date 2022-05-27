@@ -24,13 +24,15 @@ const std::vector<std::shared_ptr<cg::resource<cg::vertex>>>&
 cg::world::model::get_vertex_buffers() const
 {
 	// TODO: Lab 1.03. Using `tinyobjloader` implement `load_obj`, `get_vertex_buffers`, `get_index_buffers` methods of `cg::world::model` class
+return std::vector<std::shared_ptr<cg::resource<cg::vertex>>>();
 }
 
 
 const std::vector<std::shared_ptr<cg::resource<unsigned int>>>&
 cg::world::model::get_index_buffers() const
 {
-	// TODO: Lab 1.03. Using `tinyobjloader` implement `load_obj`, `get_vertex_buffers`, `get_index_buffers` methods of `cg::world::model` class
+    // TODO: Lab 1.03. Using `tinyobjloader` implement `load_obj`, `get_vertex_buffers`, `get_index_buffers` methods of `cg::world::model` class
+    return std::vector<std::shared_ptr<cg::resource<unsigned int>>>();
 }
 
 std::vector<std::filesystem::path>
