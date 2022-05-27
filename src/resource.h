@@ -133,6 +133,23 @@ namespace cg {
 
     // TODO: Lab 1.03. Implement `cg::vertex` struct
     struct vertex {
+        float x;
+        float y;
+        float z;
+        float nx;
+        float ny;
+        float nz;
+        float u;
+        float v;
+        float ambient_r;
+        float ambient_g;
+        float ambient_b;
+        float diffuse_r;
+        float diffuse_g;
+        float diffuse_b;
+        float emissive_r;
+        float emissive_g;
+        float emissive_b;
     };
 
 }// namespace cg
