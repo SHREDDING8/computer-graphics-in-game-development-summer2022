@@ -1,4 +1,4 @@
-[submodule "libs/cxxopts"]
+﻿[submodule "libs/cxxopts"]
 	path = libs/cxxopts
 	url = https://github.com/jarro2783/cxxopts
 [submodule "libs/linalg"]
