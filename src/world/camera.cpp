@@ -75,7 +75,7 @@ const float4x4 cg::world::camera::get_view_matrix() const
 			{-dot(x_axis, position), -dot(y_axis, position), -dot(z_axis, position), 1}};
 }
 
-ifdef DX12
+#ifdef DX12
 		const DirectX::XMMATRIX cg::world::camera::get_dxm_view_matrix() const
 {
 	DirectX::FXMVECTOR eye_position{
@@ -94,11 +94,11 @@ const DirectX::XMMATRIX cg::world::camera::get_dxm_projection_matrix() const
 {
 	return DirectX::XMMatrixPerspectiveFovRH(angle_of_view, aspect_ratio, z_near, z_far);
 }
-endif
+#endif
 
 		const float4x4 cg::world::camera::get_projection_matrix() const
 {
-	float f = 1.f / std::tanf(angle_of_view / 2.f);
+	float f = 1.f / tanf(angle_of_view / 2.f);
 
 	return float4x4{
 			{f / aspect_ratio, 0, 0, 0},
